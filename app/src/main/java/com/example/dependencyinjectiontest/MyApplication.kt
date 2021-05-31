@@ -4,5 +4,5 @@ import android.app.Application
 
 class MyApplication : Application() {
 
-  val appContainer = AppContainer(applicationContext)
+    val appContainer = AppContainer(applicationContext)
 }
