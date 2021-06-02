@@ -1,10 +1,10 @@
 package com.example.dagger
 
-import android.app.Activity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import javax.inject.Inject
 
-class LoginActivity : Activity() {
+class LoginActivity : AppCompatActivity() {
     lateinit var loginComponent: LoginComponent
 
     @Inject
