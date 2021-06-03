@@ -3,7 +3,7 @@ package com.example.hilt
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
-import dagger.hilt.android.components.ApplicationComponent
+import dagger.hilt.components.SingletonComponent
 import javax.inject.Qualifier
 
 @Retention(AnnotationRetention.BINARY)
@@ -15,7 +15,7 @@ annotation class LocalDataSource
 annotation class RemoteDataSource
 
 @Module
-@InstallIn(ApplicationComponent::class)
+@InstallIn(SingletonComponent::class)
 abstract class DataSourceModule {
     @Binds
     @LocalDataSource

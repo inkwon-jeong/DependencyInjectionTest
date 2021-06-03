@@ -7,12 +7,12 @@ import android.net.Uri
 import dagger.hilt.EntryPoint
 import dagger.hilt.InstallIn
 import dagger.hilt.android.EntryPointAccessors
-import dagger.hilt.android.components.ApplicationComponent
+import dagger.hilt.components.SingletonComponent
 
 class MyContentProvider : ContentProvider() {
 
     @EntryPoint
-    @InstallIn(ApplicationComponent::class)
+    @InstallIn(SingletonComponent::class)
     interface MyContentProviderEntryPoint {
         fun userRepository(): UserRepository
     }

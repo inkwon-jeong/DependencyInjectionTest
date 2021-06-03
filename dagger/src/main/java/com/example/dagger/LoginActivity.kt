@@ -16,5 +16,6 @@ class LoginActivity : AppCompatActivity() {
 
         loginComponent.inject(this)
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_login)
     }
 }
